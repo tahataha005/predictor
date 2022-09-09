@@ -1,0 +1,40 @@
+body{
+    background-color: powderblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: white;
+    width: 120vh;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top{
+    background-color: midnightblue;
+    flex-grow: 1;
+    height: 20%;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    background-color:lightcyan;
+    flex-grow: 1;
+    height: 80%;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
