@@ -9,16 +9,35 @@
     <script src="javascript/java.js" type="text/javascript"></script>
 </head>
 <body>
+    
     <div class="container">
         <section class="top">
-            <p class="title">Welcome To Predictor</p>
-            <p class="subtitle">We can predict your gender, age and nationality !</p>
+            <p class="head">Welcome To Predictor</p>
+            <p class="subhead">We can predict your gender, age and nationality !</p>
         </section>
-
+        
         <section class="content">
-            <div class="predictSection">
-                <label class="nameLabel">Enter name:</label>
-                <input type="text" id="name" class="nameInput">
+            <div class="predictionSection">
+                <div class="nameSection">
+                    <label class="title">Enter name:</label>
+                    <input type="text" id="name" class="nameInput">
+                </div>
+                
+                <div class="predictionValues">
+                    <p class="title">Predictions:</p>
+                    <div class="predictionItems">
+                        <label class="predictionTitles">Gender:</label>
+                        <p id="gender" class="predictions"></p>
+                    </div>
+                    <div class="predictionItems">
+                        <label class="predictionTitles">Age:</label>
+                        <p id="age" class="predictions"></p>
+                    </div>
+                    <div class="predictionItems">
+                        <label class="predictionTitles">Nationality:</label>
+                        <p id="nationality" class="predictions"></p>
+                    </div>
+                </div>
             </div>
         </section>
     </div>

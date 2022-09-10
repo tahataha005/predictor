@@ -8,7 +8,7 @@ body{
 .container{
     background-color: white;
     width: 120vh;
-    height: 500px;
+    height: 700px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -28,14 +28,14 @@ body{
     justify-content: center;
 }
 
-.title{
+.head{
     margin: 0;
     font-size: 55px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
 }
 
-.subtitle{
+.subhead{
     font-size: 20px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
@@ -49,19 +49,31 @@ body{
     padding: 20px 30px;
     border-radius: 10px;
     display: flex;
-    display: flex;
 }
 
-.predictSection{
+.nameSection{
     display: flex;
     flex-direction: column;
 }
 
-.nameLabel{
+.title{
     font-size: 30px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: midnightblue;
     font-weight: bold;
+}
+
+.predictionSection{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    background-color:rgb(245, 254, 255);
+}
+
+.predictionSection{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
 }
 
 .nameInput{
@@ -69,4 +81,30 @@ body{
     height: 25px;
     width: 170px;
     font-size: 20px;
+}
+
+.predictionValues{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.predictionItems{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-width: 100px;
+}
+
+.predictionTitles{
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: midnightblue;
+}
+
+.predictions{
+    font-size: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:darkcyan;
+    justify-content: center;
 }
