@@ -5,5 +5,8 @@ window.onload = () =>{
     const age = document.getElementById("age")
     const nationality = document.getElementById("nationality")
 
-    console.log(name,predictBtn,gender,age,nationality)
+    predictBtn.addEventListener("click", () => {
+        let input = name.value
+        console.log(input)
+    })
 }
