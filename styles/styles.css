@@ -63,10 +63,11 @@ body{
     font-weight: bold;
 }
 
-.predictionSection{
+.mainSections{
     display: flex;
     flex-direction: column;
     width: 45%;
+    margin: 15px;
     background-color:rgb(245, 254, 255);
 }
 
@@ -126,4 +127,18 @@ body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:darkcyan;
     justify-content: center;
+}
+
+.image{
+    margin: 15px;
+    width: 80%;
+    height: 80%;
+    align-self: center;
+}
+
+.changeImageButton{
+    margin: 15px;
+    width: 120px;
+    height: 30px;
+    align-self: center;
 }
