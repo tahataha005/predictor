@@ -22,5 +22,26 @@ window.onload = () =>{
                 console.log(data)
                 age.textContent = data.age
             })
+
+        // nationality API fetch
+        fetch(`https://api.nationalize.io/?name=${input}`)
+            .then(result => result.json())
+            .then(data => {
+                console.log(data)
+                let nationalties = []
+
+                if (data.country.length == 0){
+                    nationality.innerHTML = "No predicted nationalities"
+                }
+
+                else{
+                // getting all possible nationalities
+                    for(let i = 0 ; i < data.country.length ; i++){
+                        nationalties.push(data.country[i].country_id)
+                    }
+                
+                    nationality.innerHTML = nationalties.join(" - ")
+                }
+            })
     })
 }
