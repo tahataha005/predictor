@@ -7,11 +7,20 @@ window.onload = () =>{
 
     predictBtn.addEventListener("click", () => {
         let input = name.value
+        // gender API fetch
         fetch(`https://api.genderize.io?name=${input}`)
             .then(result => result.json())
             .then(data => {
                 console.log(data)
                 gender.textContent = data.gender
+            })
+        
+        // age API fetch
+        fetch(`https://api.agify.io/?name=${input}`)
+            .then(result => result.json())
+            .then(data => {
+                console.log(data)
+                age.textContent = data.age
             })
     })
 }
