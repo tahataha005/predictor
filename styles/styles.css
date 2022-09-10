@@ -13,7 +13,7 @@ img{
 
 .container{
     background-color: white;
-    width: 120vh;
+    width: 150vh;
     height: 700px;
     border-radius: 10px;
     display: flex;
@@ -52,7 +52,7 @@ img{
     flex-grow: 1;
     height: 80%;
     margin: 10px;
-    padding: 20px 30px;
+    padding: 15px 20px;
     border-radius: 10px;
     display: flex;
 }
@@ -74,7 +74,11 @@ img{
     flex-direction: column;
     width: 45%;
     margin: 15px;
+    padding: 10px;
     background-color:rgb(245, 254, 255);
+    border-radius: 10px;
+    border: midnightblue;
+    border-style: dashed;
 }
 
 .predictionBox{
@@ -84,23 +88,24 @@ img{
 
 .inputsection{
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content:flex-start;
+    flex-wrap: wrap;
 }
 
 .nameInput{
     margin-top: 15px;
+    margin-right: 20px;
     height: 25px;
     width: 170px;
     font-size: 20px;
+    display: flex;
 }
 
 .predictButton{
+    display: flex;
     height: 30px;
     width: 70px;
     margin-top: 15px;
-    margin-left: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 15px;
     justify-content: center;
@@ -117,9 +122,7 @@ img{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    min-width: 100px;
-    border: blue;
-    border-style: dashed;
+    min-width: 80px;
 }
 
 .predictionTitles{
