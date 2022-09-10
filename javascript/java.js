@@ -7,7 +7,7 @@ window.onload = () =>{
 
     predictBtn.addEventListener("click", () => {
         let input = name.value
-        fetch("https://api.genderize.io?name=rio")
+        fetch(`https://api.genderize.io?name=${input}`)
             .then(result => result.json())
             .then(data => {
                 console.log(data)
