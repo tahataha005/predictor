@@ -10,7 +10,8 @@ window.onload = () =>{
         fetch("https://api.genderize.io?name=rio")
             .then(result => result.json())
             .then(data => {
-                console.log(data.message)
+                console.log(data)
+                gender.textContent = data.gender
             })
     })
 }
