@@ -4,7 +4,14 @@ window.onload = () =>{
     const gender = document.getElementById("gender")
     const age = document.getElementById("age")
     const nationality = document.getElementById("nationality")
+    const image = document.getElementById("imageHolder")
 
+    fetch("https://dog.ceo/api/breeds/image/random")
+        .then(result => result.json())
+        .then(data => {
+            image.innerHTML = `<img src="${data.message}" alt="random dog" />`
+        })
+    
     predictBtn.addEventListener("click", () => {
         let input = name.value
         // gender API fetch

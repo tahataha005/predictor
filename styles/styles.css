@@ -5,6 +5,12 @@ body{
     justify-content: center;
 }
 
+img{
+    object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
 .container{
     background-color: white;
     width: 120vh;
