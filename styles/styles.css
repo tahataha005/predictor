@@ -76,11 +76,29 @@ body{
     padding: 15px;
 }
 
+.inputsection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+}
+
 .nameInput{
     margin-top: 15px;
     height: 25px;
     width: 170px;
     font-size: 20px;
+}
+
+.predictButton{
+    height: 30px;
+    width: 70px;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    justify-content: center;
+
 }
 
 .predictionValues{
@@ -94,6 +112,8 @@ body{
     flex-direction: column;
     flex-grow: 1;
     min-width: 100px;
+    border: blue;
+    border-style: dashed;
 }
 
 .predictionTitles{
