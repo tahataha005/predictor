@@ -5,7 +5,9 @@ window.onload = () =>{
     const age = document.getElementById("age")
     const nationality = document.getElementById("nationality")
     const image = document.getElementById("imageHolder")
+    const imageBtn = document.getElementById("imageBtn")
 
+    // initial fetch random dog image
     fetch("https://dog.ceo/api/breeds/image/random")
         .then(result => result.json())
         .then(data => {
@@ -49,6 +51,16 @@ window.onload = () =>{
                 
                     nationality.innerHTML = nationalties.join(" - ")
                 }
+            })
+    })
+
+    // reloading a random image without reloading the page
+    imageBtn.addEventListener("click",() => {
+
+        fetch("https://dog.ceo/api/breeds/image/random")
+            .then(result => result.json())
+            .then(data => {
+                image.innerHTML = `<img src="${data.message}" alt="random dog" />`
             })
     })
 }
